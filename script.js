@@ -13,7 +13,7 @@ function timeNow(){
     let months = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
    
     date.innerHTML = `
-        <span class="day">${days[nowClock.getDay()]-1}</span>
+        <span class="day">${days[nowClock.getDay()-1]}</span>
         <span class="today">${nowClock.getDate()}</span>
         <span class="month">${months[nowClock.getMonth()].toString().padStart(2,"0")}</span>
     `
