@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+body::after {
+    content: "coded by El Moudden Abdelhalim";
+    position: absolute;
+    bottom: 5px;
+    font-style: italic;
+    font-size: 10px;
+    color: red;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 86, 142);
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    height: 50%;
+    
+}
+.clock .hours {
+    color: red;
+    font-size: 50px;
+}
+.clock .minutes {
+    color: goldenrod;
+    font-size: 50px;
+}
+.clock .seconds {
+    color: green;
+    font-size: 50px;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    color: white;
+    
+}
+.today {
+    font-size: 45px;
+    scale: 1.1;
+    margin: 0 10px;
+    box-shadow: 1px 1px 10px 0.2px rgb(0 0 0 / 80%);
+}
