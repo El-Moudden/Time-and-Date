@@ -14,8 +14,8 @@ function timeNow(){
    
     date.innerHTML = `
         <span class="day">${days[nowClock.getDay()-1]}</span>
-        <span class="today">${nowClock.getDate()}</span>
-        <span class="month">${months[nowClock.getMonth()].toString().padStart(2,"0")}</span>
+        <span class="today">${nowClock.getDate().toString().padStart(2,"0")}</span>
+        <span class="month">${months[nowClock.getMonth()]}</span>
     `
 
     
